@@ -3,13 +3,15 @@ margin: 0;
 box-sizing: border-box;
 font-family: sans-serif;}
 .navbar{
-    width: 100%;
+    width: 1905px;
     height: 60px;
      display: flex;
             align-items: center;
             justify-content: space-around;
             background-color: whitesmoke;
-           
+           img{
+            width: 32px;
+             height: 32px;
     .right{
             width: 556px;
             height: 60px;
@@ -17,19 +19,20 @@ font-family: sans-serif;}
             align-items: center;
             justify-content: center;
             gap: 35px;
-            img{
-            width: 32px;
-             height: 32px;
-             
-        
+            
                }
                a{
                 text-decoration: none;
                 color: rgb(39, 39, 39);
              }
+             .nav_ma{
+                display: flex; 
+                gap: 35px;
+             }
              a:hover{
         color: orangered;
     }
+
         }
         .left{
              width: 556px;
@@ -53,7 +56,7 @@ font-family: sans-serif;}
         }
 }
 .first_top{
-    width: 100%;
+    width: 1905px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -71,12 +74,12 @@ font-family: sans-serif;}
     }
 }
 .second_top{
-    width: 100%;
+    width: 1905px;
     height: 200px;
     padding-left: 15px;
     background-color: whitesmoke;
     .menue{
-        width: 100%;
+        width: 1905px;
         height: 20px;
         display: flex;
         align-items: center;
@@ -97,7 +100,7 @@ font-family: sans-serif;}
 
 }
 .cards{
-    width: 100%;
+    width: 1905px;
     height: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -130,12 +133,12 @@ font-family: sans-serif;}
     }
 }
 .footer{
-    width: 100%;
+    width:1905px;
     height: 600px;
     color:white;
     background-color: #191919;
     .top{
-        width:100%;
+        width:1905px;
         height: auto;
         display: flex;
         align-items: center;
@@ -217,7 +220,7 @@ hr{
     color: #898989;
 }
 .f_end{
-    width: 100%;
+    width: 1905px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -254,6 +257,38 @@ hr{
  
    
 }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:770px) 
+{
+    .nav_ma a{
+        display: none;
+    }
+    .navbar a{
+        font-size: larger;
+
+    }
+    .first_top{
+        padding-left: 200px;
+    }
+    .second_top{
+        padding-left: 200px;
+    }
+    .cards{
+         grid-template-columns: 1fr 1fr  1fr;
+    }
+    
+}
+
+
 
 
 
